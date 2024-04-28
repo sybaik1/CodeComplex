@@ -42,7 +42,7 @@ def remove_comments(string, lang):
 def preprocessing(code,lang):
     no_comment_code = remove_comments(code,lang)
     if lang == 'java':
-        no_comment_code=delete_import(no_comment_code)
+        # no_comment_code=delete_import(no_comment_code)
         try:
             converted_code=convert(no_comment_code)
             return converted_code
@@ -68,7 +68,7 @@ def n_fold_sample(data,size,n=5):
             length_dict[item[1]]=1
     
     test_n_idx={}
-    reset_cycle=5 # if cycle over the reset_cycle, reset all data list
+    reset_cycle=10 # if cycle over the reset_cycle, reset all data list
 
     for comple in item_dict.keys():
         test_n_idx[comple]=[]
@@ -86,20 +86,20 @@ def n_fold_sample(data,size,n=5):
                     else:
                         train[comple].append([item[0],item[1]])
         
-            if (len(train[comple])/length_dict[comple])<(size*1.1) and (len(train[comple])/length_dict[comple])>(size*0.9):
+            if (len(train[comple])/length_dict[comple])<(size*1.2) and (len(train[comple])/length_dict[comple])>(size*0.8):
                 cur_n+=1
                 test_n_idx[comple].append(test_idx)
                 tmp_item_dicy=tmp_item_dicy-set(test_idx)
-            if cur_n == n:
-                test_n_idx[comple].append(tmp_item_dicy)
-                print(comple)
-                break
-            if cycle == reset_cycle:
-                # print('reset')
+            elif cycle == reset_cycle:
+                print('reset')
                 cur_n=1
                 cycle=0
                 tmp_item_dicy=item_dict[comple]
                 test_n_idx[comple]=[]
+            if cur_n == n:
+                test_n_idx[comple].append(tmp_item_dicy)
+                print(comple)
+                break
             cycle+=1
     return test_n_idx
 

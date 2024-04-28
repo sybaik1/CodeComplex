@@ -42,7 +42,7 @@ def remove_comments(string, lang):
 def preprocessing(code,lang):
     no_comment_code = remove_comments(code,lang)
     if lang == 'java':
-        no_comment_code=delete_import(no_comment_code)
+        # no_comment_code=delete_import(no_comment_code)
         try:
             converted_code=convert(no_comment_code)
             return converted_code
@@ -67,7 +67,7 @@ def delete_error(datas):
 def print_distribution(data,name):
     dist={}
     for t in data:
-        complexity=t['label']
+        complexity=t['complexity']
         if complexity in dist.keys():
             dist[complexity]+=1/len(data)
         else:
@@ -87,23 +87,23 @@ def split(args):
         for idx, line in enumerate(f):
             line = line.strip()
             obj=json.loads(line)
-            datas.append([preprocessing(obj['src'],args.lang), labels_ids[obj['complexity']], obj['problem']])
+            datas.append([preprocessing(obj['src'],args.lang), obj['complexity'], obj['problem']])
     if args.lang == 'java':
         delete_error(datas)
     codes=[]
     complexity=[]
 
     for item in datas:
-        codes.append(item[0])
+        codes.append([item[0],item[2]])
         complexity.append(item[1])
 
     x_train, x_test, y_train, y_test = train_test_split(codes, complexity, test_size=1-args.size, random_state=777, stratify=complexity)
     train=[]
     test=[]
     for idx in range(len(x_train)):
-        train.append({"label":y_train[idx],"src":x_train[idx]})
+        train.append({"complexity":y_train[idx],"problem":x_train[idx][1],"src":x_train[idx][0]})
     for idx in range(len(x_test)):
-        test.append({"label":y_test[idx],"src":x_test[idx]})
+        test.append({"complexity":y_test[idx],"problem":x_test[idx][1],"src":x_test[idx][0]})
     print('train:',len(train),'\n','test:',len(test))
     print('train:',round(len(train)/(len(train)+len(test)),3),'\n','test:',round(len(test)/(len(train)+len(test)),3))
 
@@ -113,8 +113,8 @@ def split(args):
         for i in test: file.write(json.dumps(i) + "\n")
 
 
-    print_distribution(train,'train')
-    print_distribution(test,'test')
+    #print_distribution(train,'train')
+    #print_distribution(test,'test')
 
 if __name__=='__main__':
     parser = argparse.ArgumentParser()
