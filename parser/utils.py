@@ -1,11 +1,57 @@
 import re
 from io import StringIO
 import  tokenize
+import token
+
+def do_file(source):
+    """ Run on just one file.
+    """
+    io_obj = StringIO(source)
+    prev_toktype = token.INDENT
+    first_line = None
+    last_lineno = -1
+    last_col = 0
+
+    aug_string = ""
+
+    tokgen = tokenize.generate_tokens(io_obj.readline)
+    for toktype, ttext, (slineno, scol), (elineno, ecol), ltext in tokgen:
+        if 0:   # Change to if 1 to see the tokens fly by.
+            print("%10s %-14s %-20r %r" % (
+                tokenize.tok_name.get(toktype, toktype),
+                "%d.%d-%d.%d" % (slineno, scol, elineno, ecol),
+                ttext, ltext
+                ))
+        if slineno > last_lineno:
+            last_col = 0
+        if scol > last_col:
+            aug_string += " " * (scol - last_col)
+        if toktype == token.STRING and prev_toktype == token.INDENT:
+            # Docstring
+            aug_string += "#--"
+            pass
+        elif toktype == tokenize.COMMENT:
+            # Comment
+            aug_string += "##\n"
+            pass
+        else:
+            aug_string += ttext
+        prev_toktype = toktype
+        last_col = ecol
+        last_lineno = elineno
+    return aug_string
+
+
 def remove_comments_and_docstrings(source,lang):
     if lang in ['python']:
         """
         Returns 'source' minus comments and docstrings.
         """
+        indent_token = " "
+        for line in source.splitlines():
+            if len(line.lstrip()) < len(line):
+                indent_token = line[0]
+                break
         io_obj = StringIO(source)
         out = ""
         prev_toktype = tokenize.INDENT
@@ -20,7 +66,10 @@ def remove_comments_and_docstrings(source,lang):
             if start_line > last_lineno:
                 last_col = 0
             if start_col > last_col:
-                out += (" " * (start_col - last_col))
+                if last_col==0:
+                    out += (indent_token * (start_col - last_col))
+                else:
+                    out += (" " * (start_col - last_col))
             # Remove comments:
             if token_type == tokenize.COMMENT:
                 pass

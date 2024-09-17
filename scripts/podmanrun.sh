@@ -1,1 +1,1 @@
-podman run -it --rm --init --mount type=bind,src=.,dst=/mnt/workspace codecomple
+podman run -it --rm --init --device=nvidia.com/gpu=all --mount type=bind,src=.,dst=/mnt/workspace codecomple

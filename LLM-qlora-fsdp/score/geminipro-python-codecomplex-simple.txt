@@ -1,0 +1,6 @@
+geminipro-python with codecomplex-simple
+Scores
+acc: 0.354, f1 score: 0.334
+base: 0.802, exp 2: 0.518, exp 3: 0.639
+Scores with [0,1,2,3,4,6,8]
+base: 0.815, exp 2: 0.473, exp 3: 0.592

@@ -1,6 +1,43 @@
 import javalang
+import string
 from javalang.ast import Node
+import ast
+from vulture import core
 
+def python_code_depth(code):
+    code = code.splitlines()
+    max_depth = 0
+    indent = 0
+    max_iter = 0
+    depth = []
+    for line in code:
+        if line.strip() == "":
+            continue
+        for char in line:
+            if char not in string.whitespace:
+                break
+            indent += 1
+        else:
+            indent = 0
+        if indent!=0: 
+            break
+    if indent == 0:
+        indent = 4
+    for line in code:
+        line_indent = 0
+        if line.strip() == "":
+            continue
+        for char in line:
+            if char not in string.whitespace:
+                break
+            line_indent += 1
+        while len(depth)>0 and line_indent//indent <= depth[-1]:
+            del depth[-1]
+        if 'def' in line or 'for' in line or 'while' in line:
+            depth.append(line_indent//indent)
+        max_depth = max(max_depth, line_indent//indent)
+        max_iter = max(max_iter, len(depth))
+    return max_depth, max_iter
 def get_children(root):
     if isinstance(root, Node):
         children = root.children
@@ -201,16 +238,26 @@ def get_feature_v2(tree):
     return method_feature['main']
 
 
-def feature_Extractor(source, version=1):
+def feature_Extractor(source, lang='java', version=1):
     # f = open(path + source_file)
     # source = f.read()
     # f.close()
-    tree = javalang.parse.parse(source)
 
-    if version == 1:
-        return get_feature_v1(tree)
+    if lang=='java':
+        tree = javalang.parse.parse(source)
+        if version == 1:
+            return get_feature_v1(tree)
+        return get_feature_v2(tree)
 
-    return get_feature_v2(tree)
+    else:
+        v = core.Vulture()
+        v.scan(source)
+        a,b= python_code_depth(source)
+        return [source.count('if'),source.count('while')+source.count('for'),source.count('break'),source.count('sort'),source.count('list')+source.count('split'),len(source.splitlines()), len(v.used_names), len(v.defined_attrs), a,b, len(v.defined_vars), len(v.defined_methods), len(v.defined_funcs)]
+
+        #tree = ast.parse(source)
+        #feature_extractor = PythonFeature()
+        #return feature_extractor.get_feature_python(tree) + [len(v.used_names), len(v.defined_attrs), len(v.defined_classes), len(v.defined_props), len(v.defined_vars), len(v.defined_funcs), len(v.defined_methods)]
 
 
 def get_feature_v1(tree):
@@ -273,3 +320,54 @@ def get_feature_v1(tree):
 
     return [num_if, num_switch, num_loof, num_break, num_Priority, num_sort, num_hash_map, num_hash_set, num_recursive,
             num_nasted_loop, num_vari, num_method, num_state]
+
+
+class PythonFeature(ast.NodeVisitor):
+    num_if = 0
+    num_loop = 0
+    num_break = 0
+    num_recursive = 0
+    num_vari = 0
+    num_method = 0
+    num_state = 0
+    names = set()
+
+    def visit(self, node):
+        method = 'visit_' + node.__class__.__name__
+        visitor = getattr(self, method, self.generic_visit)
+        if isinstance(node, ast.stmt):
+            self.num_state += 1
+        return visitor(node)
+
+
+    def visit_If(self, node):
+        self.num_if += 1
+        return node
+
+    def visit_While(self, node):
+        self.num_loop += 1
+        return node
+
+    def visit_For(self, node):
+        self.num_loop += 1
+        return node
+
+    def visit_Break(self, node):
+        self.num_break += 1
+        return node
+
+    def visit_Name(self, node):
+        if isinstance(node.ctx, ast.Store):
+            self.names.add(node.id)
+        return node
+    
+    def visit_FunctionDef(self, node):
+        self.num_method += 1
+        return node
+
+    
+    def get_feature_python(self,node):
+        self.visit(node)
+        self.num_vari = len(self.names)
+        return [self.num_if, self.num_loop, self.num_break,
+                self.num_vari, self.num_method, self.num_state]

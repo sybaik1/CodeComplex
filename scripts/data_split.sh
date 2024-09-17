@@ -1,7 +1,7 @@
 #!/bin/bash
 
 python3 data_processing/split.py --file_name $1.jsonl --size 0.8 --lang $2
-python3 data_processing/split_n_fold.py --file_name $1.jsonl --size 0.8 --fold 5 --lang $2
+python3 data_processing/split_n_fold.py --file_name $1.jsonl --size 0.8 --fold 4 --lang $2
 
 i=0;
 for i in {0..4}
