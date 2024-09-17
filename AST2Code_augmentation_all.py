@@ -16,7 +16,7 @@ assigmen_type={'%=':operator.mod,
                '=':noraml_assignment}
 
 class AST2Code_module():
-    def __init__(self,variable=0,folding=0,bracket=0,for_while=0,ternary=0,dead_code=0):
+    def __init__(self,variable=0.0,folding=0.0,bracket=0.0,for_while=0.0,ternary=0.0,dead_code=1):
         r'''
         init module for ast -> code
         Arguments:

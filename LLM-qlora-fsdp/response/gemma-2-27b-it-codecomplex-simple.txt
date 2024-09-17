@@ -1,0 +1,980 @@
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "quadratic", "responce": "\n\n{\n    \"complexity\": \"quadratic\"\n}"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "nlogn", "responce": "\n{\n    \"complexity\": \"nlogn\"\n}"}
+{"answer": " nlogn", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n - 1 - i] = tmp;\n            }\n        }\n\n        static void reverse(long[] arr) {\n            int last = arr.length / 2;\n            for (int i = 0; i < last; i++) {\n                long tmp = arr[i];\n                arr[i] = arr[arr.length - 1 - i];\n                arr[arr.length - 1 - i] = tmp;\n            }\n        }\n\n        static void reverse(char[] arr) {\n            int last = arr.length / 2;\n            for (int i = 0; i < last; i++) {\n                char tmp = arr[i];\n                arr[i] = arr[arr.length - 1 - i];\n                arr[arr.length - 1 - i] = tmp;\n            }\n        }\n\n        static void reverse(string[] arr) {\n            int last = arr.length / 2;\n            for (int i = 0; i < last; i++) {\n                string tmp = arr[i];\n                arr[i] = arr[arr.length - "}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "nlogn", "responce": "\n\n{\n    \"complexity\": \"nlogn\"\n}"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n\n\t\t}\n\n\t\tprivate static void insertionsort(long[] a, int leftindex, int rightindex) {\n\t\t\tfor (int i = leftindex + 1; i <= rightindex; i++) {\n\t\t\t\tlong current = a[i];\n\t\t\t\tint j = i - 1;\n\t\t\t\twhile (j >= leftindex && a[j] > current) {\n\t\t\t\t\ta[j + 1] = a[j];\n\t\t\t\t\tj--;\n\t\t\t\t}\n\t\t\t\ta[j + 1] = current;\n\t\t\t}\n\t\t}\n\n\t\tprivate static void insertionsort(double[] a, int leftindex, int rightindex) {\n\t\t\tfor (int i = leftindex + 1; i <= rightindex; i++) {\n\t\t\t\tdouble current = a[i];\n\t\t\t\tint j = i - 1;\n\t\t\t\twhile (j >= leftindex && a[j] > current) {\n\t\t\t\t\ta[j + 1] = a[j];\n\t\t\t\t\tj--;\n\t\t\t\t}\n\t\t\t\ta[j + 1] = current;\n\t\t\t}\n\t\t}\n\t}\n\n\tvoid solve() throws ioexception {\n\t\tint n = readint();"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "constant", "responce": "\n{\n    \"complexity\": \"constant\"\n}"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n\n"}
+{"answer": " nlogn", "complexity": "nlogn", "responce": "\n{\n    \"complexity\": \"nlogn\"\n}\n"}
+{"answer": " logn", "complexity": "constant", "responce": "\n{\n    \"complexity\": \"constant\"\n}"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n\n"}
+{"answer": " constant", "complexity": "linear", "responce": "\n\n\n----------------------------------------\n\n```\n{\n    \"complexity\": \"linear\"\n}.\n```"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "nlogn", "responce": "\n}\n\n        private boolean isendofline(final int c) {\n            return c == '\\n' || c == '\\r' || c == -1;\n        }\n    }\n}\n\n----------------------------------------\n\n```\n{\n    \"complexity\": \"nlogn\"\n}\n```"}
+{"answer": " linear", "complexity": "linear", "responce": "\n    }\n\n    void addedge(int u, int v) {\n        hm.get(u).add(v);\n        hm.get(v).add(u);\n    }\n\n    void dfs(int u, int parent) {\n        vis[u] = 1;\n        for (int v : hm.get(u)) {\n            if (vis[v] == 0) {\n                dfs(v, u);\n            } else if (v!= parent) {\n                cycle = true;\n            }\n        }\n    }\n\n}\n\n----------------------------------------\n\n```\n{\n    \"complexity\": \"linear\"\n}\n```"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " constant", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "nlogn", "responce": "\n{\n    \"complexity\": \"nlogn\"\n}"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "nlogn", "responce": "\n{\n    \"complexity\": \"nlogn\"\n}"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "quadratic", "responce": "\n\n{\n    \"complexity\": \"n^2\"\n}\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n -1;\n        }\n\n        public interface spacecharfilter {\n            boolean isspacechar(int ch);\n        }\n    }\n    static class ioutils {\n        public static int[] readintarray(inputreader in, int n) {\n            int[] arr = new int[n];\n            for (int i = 0; i < n; i++) {\n                arr[i] = in.readint();\n            }\n            return arr;\n        }\n    }\n    static class miscutils {\n        public static void decreasebyone(int[] a) {\n            for (int i = 0; i < a.length; i++) {\n                a[i]--;\n            }\n        }\n    }\n    static class arrayutils {\n        public static int maxelement(int[] array) {\n            int max = array[0];\n            for (int i = 1; i < array.length; i++) {\n                if (array[i] > max) {\n                    max = array[i];\n                }\n            }\n            return max;\n        }\n    }\n}\n\n----------------------------------------\n\n```"}
+{"answer": " logn", "complexity": "constant", "responce": "\n{\n    \"complexity\": \"constant\"\n}"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "constant", "responce": "\n{\n    \"complexity\": \"constant\"\n}"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "logn", "responce": "\n{\n    \"complexity\": \"logn\"\n}"}
+{"answer": " quadratic", "complexity": "nlogn", "responce": "\n{\n    \"complexity\": \"nlogn\"\n}\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "nlogn", "responce": "\n        long nl() {\n            return long.parselong(next());\n        }\n \n        double nd() {\n            return double.parsedouble(next());\n        }\n \n        string nextline() {\n            string str = \"\";\n            try {\n                str = br.readline();\n            } catch (ioexception e) {\n                e.printstacktrace();\n            }\n            return str;\n        }\n    }\n}\n\n----------------------------------------\n\n```json\n{\n    \"complexity\": \"nlogn\"\n}.\n```"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\nc.length;k++) {\n\t\t\t\t\tif(s[i][j]==c[k])map.put(c[k],i*m+j);\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n\t\n\tint toint(int i,int j) {\n\t\treturn i*m+j;\n\t}\n\t\n\tboolean cango(int i,int j) {\n\t\treturn i>=0&&i<n&&j>=0&&j<m&&s[i][j]!=b;\n\t}\n\t\n\tint[] getpos(char c) {\n\t\treturn new int[]{map.get(c)/m,map.get(c)%m};\n\t}\n\t\n}\n\nclass mathplus{\n\tpublic static int bitadd(int a,int b) {\n\t\treturn a|(1<<b);\n\t}\n\tpublic static boolean contains(int a,int b) {\n\t\treturn (a&(1<<b))!=0;\n\t}\n}\n\nclass fastscanner {\n\tprivate final java.io.inputstream in = system.in;\n\tprivate final byte[] buffer = new byte["}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "constant", "responce": "\n{\n    \"complexity\": \"constant\"\n}"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "nlogn", "responce": "\n{\n    \"complexity\": \"nlogn\"\n}"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "nlogn", "responce": "\n{\n    \"complexity\": \"nlogn\"\n}"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\nfor (int j = 0; j < n; ++j){\n\t\t\t\tdoublemasks[i][j] = singlemasks[i] | singlemasks[j];\n\t\t\t}\n\t\t}\n\t\t\n\t\tint[][] dp = new int[1 << n][n];\n\t\tfor (int mask = 0; mask < (1 << n); ++mask){\n\t\t\tfor (int i = 0; i < n; ++i){\n\t\t\t\tdp[mask][i] = integer.max_value;\n\t\t\t}\n\t\t}\n\t\t\n\t\tfor (int i = 0; i < n; ++i){\n\t\t\tdp[singlemasks[i]][i] = dist[i];\n\t\t}\n\t\t\n\t\tfor (int mask = 1; mask < (1 << n); ++mask){\n\t\t\tfor (int i = 0; i < n; ++i){\n\t\t\t\tif ((mask & singlemasks[i])!= 0){\n\t\t\t\t\tfor (int j = 0; j < n; ++j){\n\t\t\t\t\t\tif ((mask & singlemasks[j])!= 0 && i!= j){\n\t\t\t\t\t\t\tdp[mask][i] = min("}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\ncost;\n\t\t\t}\n\t\t\t\n\t\t\tfor(edge e = inedge[sink];e!= null;e = inedge[e.from]){\n\t\t\t\te.flow += minflow;\n\t\t\t\te.complement.flow -= minflow;\n\t\t\t}\n\t\t\t\n\t\t\tmincost += sumcost * minflow;\n\t\t\tall -= minflow;\n\t\t}\n\t\treturn mincost;\n\t}\n\n\t\n\tpublic static int[][] packu(int n, int[] from, int[] to) {\n\t\tint[][] g = new int[n][];\n\t\tint[] p = new int[n];\n\t\tfor (int i = 0; i < from.length; i++) {\n\t\t\tp[from[i]]++;\n\t\t\tp[to[i]]++;\n\t\t}\n\t\tfor (int i = 0; i < n; i++)\n\t\t\tg[i] = new int[p[i]];\n\t\tfor (int i = 0; i < from.length; i++) {\n\t\t\tg[from[i]][--p[from[i]]] = to[i];\n\t\t\tg[to[i]][--p[to[i"}
+{"answer": " constant", "complexity": "logn", "responce": "\n{\n    \"complexity\": \"logn\"\n}\n"}
+{"answer": " quadratic", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n\n                } while (multiple_tests);\n            }\n        } catch (exception e) {\n            e.printstacktrace();\n        }\n    }\n\n    private void init() {\n        if (interactive) {\n            in = new bufferedreader(new inputstreamreader(system.in));\n            out = new printwriter(system.out);\n        } else {\n            try {\n                in = new bufferedreader(new filereader(\"input.txt\"));\n                out = new printwriter(\"output.txt\");\n            } catch (filenotfoundexception e) {\n                e.printstacktrace();\n            }\n        }\n    }\n\n    private bufferedreader in;\n    private printwriter out;\n\n    private void timeinit() {\n        starttime = system.currenttimemillis();\n    }\n\n    private void time() {\n        long endtime = system.currenttimemillis();\n        system.err.println(\"time: \" + (endtime - starttime) + \" ms\");\n    }\n\n    private long starttime;\n\n    private int readint() {\n        return integer.parseint(readstring());\n    }\n\n    private string readstring() {\n        try {\n            return in.readline();\n        } catch ("}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "constant", "responce": "\n{\n    \"complexity\": \"constant\"\n}"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n();\n\t\t}\n\t\treturn sb.tostring();\n\t}\n\t\n\tprivate int ni() { return (int)nl(); }\n\tprivate long nl()\n\t{\n\t\tlong n = 0;\n\t\tint b = skip();\n\t\tint sign = 1;\n\t\tif(b == '-') { sign = -1; b = readbyte(); }\n\t\twhile(!isspacechar(b))\n\t\t{\n\t\t\tn = n*10 + b-'0';\n\t\t\tb = readbyte();\n\t\t}\n\t\treturn sign * n;\n\t}\n\t\n\tprivate int[] na(int n)\n\t{\n\t\tint[] a = new int[n];\n\t\tfor(int i = 0;i < n;i++)a[i] = ni();\n\t\treturn a;\n\t}\n\t\n\tprivate long[] nal(int n)\n\t{\n\t\tlong[] a = new long[n];\n\t\tfor(int i = 0;i < n;i++)a[i] = nl();\n\t\treturn a;\n\t}\n\t\n\tprivate boolean oj = system.getproperty(\"online_judge"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "nlogn", "responce": "\n{\n    \"complexity\": \"nlogn\"\n}\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "nlogn", "responce": "\n\n{\n    \"complexity\": \"nlogn\"\n}"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "constant", "responce": "\n{\n    \"complexity\": \"constant\"\n}"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n a * (a - 1) / 2;\n\t}\n\tstatic long gcd(long a, long b) {\n\t\tif (b == 0)\n\t\t\treturn a;\n\t\treturn gcd(b, a % b);\n\t}\n\tstatic long lcm(long a, long b) {\n\t\treturn (a * b) / gcd(a, b);\n\t}\n\tstatic long power(long x, long y, long p) {\n\t\tlong res = 1;\n\t\tx = x % p;\n\t\twhile (y > 0) {\n\t\t\tif (y % 2 == 1)\n\t\t\t\tres = (res * x) % p;\n\t\t\ty = y >> 1;\n\t\t\tx = (x * x) % p;\n\t\t}\n\t\treturn res;\n\t}\n\tstatic class reader {\n\t\tfinal private int buffer_size = 1 << 16;\n\t\tprivate datainputstream din;\n\t\tprivate byte[] buffer;\n\t\tprivate int bufferpointer, bytesread;\n\n\t\tpublic reader() {\n\t\t\tdin = new datainputstream(system.in);\n\t\t\tbuffer = new byte["}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n\n"}
+{"answer": " cubic", "complexity": "cubic", "responce": "\n{\n    \"complexity\": \"cubic\"\n}"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "nlogn", "responce": "\n{\n    \"complexity\": \"nlogn\"\n}"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "nlogn", "responce": "\n{\n    \"complexity\": \"nlogn\"\n}"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "logn", "responce": "\n{\n    \"complexity\": \"logn\"\n}"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n buf = new byte[buf_size];\n        private int ptr = 0;\n        private outputstream out;\n\n        public fastwriter(outputstream out) {\n            this.out = out;\n        }\n\n        public void print(int i) {\n            print(string.valueof(i));\n        }\n\n        public void print(long l) {\n            print(string.valueof(l));\n        }\n\n        public void print(char c) {\n            try {\n                out.write(c);\n            } catch (ioexception e) {\n                throw new runtimeexception(e);\n            }\n        }\n\n        public void print(string s) {\n            try {\n                for (int i = 0; i < s.length(); i++) {\n                    out.write(s.charat(i));\n                }\n            } catch (ioexception e) {\n                throw new runtimeexception(e);\n            }\n        }\n\n        public void println(int i) {\n            print(i);\n            println();\n        }\n\n        public void println(long l) {\n            print(l);\n            println();\n        }"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "logn", "responce": "\nreturn double.parsedouble(next());\n        }\n\t}\n}\n\n----------------------------------------\n\n```\n\nthe code implements a binary search algorithm to find two rectangles within a larger square grid. the algorithm interacts with an external system (likely a judge) by making queries to determine if a given rectangular region contains a \"1\".\n\nlet's break down the time complexity:\n\n* **binary search:** the main logic uses binary search to find the dividing line between the two rectangles. this has a time complexity of **logn**.\n\n* **finding rectangles:** the `find` method uses binary search again to determine the exact boundaries of each rectangle. this is done four times (once for each side of a rectangle), resulting in a complexity of **4 * logn**.\n\n* **overall complexity:**\n\nsince the binary search for the dividing line and the rectangle finding are the dominant operations, the overall time complexity of the code is **logn**.\n\n\n\n```json\n{\n    \"complexity\": \"logn\"\n}\n```\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "nlogn", "responce": "\n\n{\n    \"complexity\": \"nlogn\"\n}"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "constant", "responce": "\n{\n    \"complexity\": \"constant\"\n}"}
+{"answer": " linear", "complexity": "exponential", "responce": "\n st.nexttoken();\n            st = new stringtokenizer(br.readline());\n            return next();\n        }\n        public int nextint() throws ioexception {\n            return integer.parseint(next());\n        }\n        public long nextlong() throws ioexception {\n            return long.parselong(next());\n        }\n        public double nextdouble() throws ioexception {\n            return double.parsedouble(next());\n        }\n    }\n\n}\n\n----------------------------------------\n\n```json\n{\n    \"complexity\": \"exponential\"\n}\n```"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " cubic", "complexity": "linear", "responce": "\n\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "nlogn", "responce": "\n{\n    \"complexity\": \"nlogn\"\n}"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "nlogn", "responce": "\n{\n    \"complexity\": \"nlogn\"\n}\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "linear", "responce": "\n c) {\n        writer.println(c);\n    }\n\n    public void printline(int i) {\n        writer.println(i);\n    }\n\n    public void printline(long l) {\n        writer.println(l);\n    }\n\n    public void printline(double d) {\n        writer.println(d);\n    }\n\n    public void close() {\n        writer.close();\n    }\n\n}\n\n----------------------------------------\n\n```json\n{\n    \"complexity\": \"linear\"\n}.\n```"}
+{"answer": " nlogn", "complexity": "nlogn", "responce": "\n{\n    \"complexity\": \"nlogn\"\n}"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "nlogn", "responce": "\n{\n    \"complexity\": \"nlogn\"\n}"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " cubic", "complexity": "nlogn", "responce": "\n a;\n\t}\n\n\tprivate long nl() {\n\t\tlong num = 0;\n\t\tint b;\n\t\tboolean minus = false;\n\t\twhile ((b = readbyte())!= -1 &&!((b >= '0' && b <= '9') || b == '-'))\n\t\t\t;\n\t\tif (b == '-') {\n\t\t\tminus = true;\n\t\t\tb = readbyte();\n\t\t}\n\n\t\twhile (true) {\n\t\t\tif (b >= '0' && b <= '9') {\n\t\t\t\tnum = num * 10 + (b - '0');\n\t\t\t} else {\n\t\t\t\treturn minus? -num : num;\n\t\t\t}\n\t\t\tb = readbyte();\n\t\t}\n\t}\n\n\tprivate void tr(object... o) {\n\t\tif (input.length() > 0)\n\t\t\tsystem.out.println(arrays.deeptostring(o));\n\t}\n}\n\n----------------------------------------\n\n```json\n{\n    \"complexity\": \"nlogn\"\n}\n```"}
+{"answer": " np", "complexity": "exponential", "responce": "\nthe time complexity of the given code is **exponential**.\n\nhere's why:\n\n* **bron-kerbosch algorithm:** the core of the code implements the bron-kerbosch algorithm, a well-known algorithm for finding the maximum clique in a graph. this algorithm has an inherently exponential worst-case time complexity.\n\n* **nested loops:** the code includes nested loops for reading input and building the adjacency matrix. while these loops contribute to the overall runtime, their complexity is overshadowed by the exponential nature of the bron-kerbosch algorithm.\n\n* **recursive nature:** the `bronkerbosch2` function is recursive, and in the worst case, it can explore a vast number of possible clique combinations, leading to exponential growth in execution time as the number of vertices increases.\n\n\n\ntherefore, the dominant factor determining the time complexity is the bron-kerbosch algorithm, making the overall time complexity **exponential**.\n\n```json\n{\n    \"complexity\": \"exponential\"\n}\n```\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " constant", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n    599,    601,\n                607,    613,    617,    619,    631,    641,    643,    647,    653,    659,\n                661,    673,    677,    683,    691,    701,    709,    719,    727,    733,\n                739,    743,    751,    757,    761,    769,    773,    787,    797,    809,\n                811,    821,    823,    827,    829,    839,    853,    857,    859,    863,\n                877,    881,    883,    887,    907,    911,    919,    929,    "}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n0' || c > '9')\n\n                    throw new inputmismatchexception();\n\n                res *= 10;\n\n                res += c - '0';\n\n                c = read();\n\n            }\n\n            if (c == '.')\n\n            {\n\n                c = read();\n\n                double m = 0.1;\n\n                while (!isspacechar(c))\n\n                {\n\n                    if (c < '0' || c > '9')\n\n                        throw new inputmismatchexception();\n\n                    res += (c - '0') * m;\n\n                    m *= 0.1;\n\n                    c = read();\n\n                }\n\n            }\n\n            return res * sgn;\n\n        }\n\n\n\n        public string readstring()\n\n        {\n\n            int c = read();\n\n            while (isspacechar(c))\n\n                c = read();\n\n            stringbuilder res = new stringbuilder();\n\n            do\n\n            {\n\n                res.appendcodepoint(c);\n\n                c = read();\n\n            }\n\n            while (!isspacechar(c));\n\n            return res.tostring();\n\n        }\n\n\n\n        public boolean isspacechar(int c)\n\n        {\n\n            if (filter!= null"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n\n                map.put(x, ans);\n            }\n            return ans;\n        }\n\n        private static int findprimefactor(int x, int begin) {\n            for (int i = begin; i * i <= x; i++) {\n                if (x % i == 0) {\n                    return i;\n                }\n            }\n            return x;\n        }\n\n    }\n\n    static class combination {\n        private final long[][] c;\n        private final int mod;\n\n        public combination(int n, int mod) {\n            this.mod = mod;\n            c = new long[n + 1][n + 1];\n            for (int i = 0; i <= n; i++) {\n                c[i][0] = 1;\n            }\n            for (int i = 1; i <= n; i++) {\n                for (int j = 1; j <= i; j++) {\n                    c[i][j] = (c[i - 1][j - 1] + c[i - 1][j]) % mod;\n                }\n            }\n        "}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "nlogn", "responce": "\n{\n    \"complexity\": \"nlogn\"\n}"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "quadratic", "responce": "\n{\n    \"complexity\": \"n^2\"\n}\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "nlogn", "responce": "\n{\n    \"complexity\": \"nlogn\"\n}"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "linear", "responce": "\nif (mod > 0){\n\t\t\tcount++;\n\t\t}\n\t\t\n\t\tout.println(count);\n\t}\n}\n\n----------------------------------------\n\n```\n{\n    \"complexity\": \"linear\"\n}\n```"}
+{"answer": " linear", "complexity": "nlogn", "responce": "\n{\n    \"complexity\": \"nlogn\"\n}"}
+{"answer": " quadratic", "complexity": "nlogn", "responce": "\n{\n    \"complexity\": \"nlogn\"\n}"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "nlogn", "responce": "\n the code.\n\n```json\n{\n    \"complexity\": \"nlogn\"\n}\n```"}
+{"answer": " nlogn", "complexity": "nlogn", "responce": "\n{\n    \"complexity\": \"nlogn\"\n}"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "nlogn", "responce": "\n{\n    \"complexity\": \"nlogn\"\n}"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "nlogn", "responce": "\n\n{\n    \"complexity\": \"nlogn\"\n}"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "nlogn", "responce": "\n{\n    \"complexity\": \"nlogn\"\n}"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "nlogn", "responce": "\n\n{\n    \"complexity\": \"nlogn\"\n}\n"}
+{"answer": " nlogn", "complexity": "nlogn", "responce": "\n{\n    \"complexity\": \"nlogn\"\n}"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "logn", "responce": "\n{\n    \"complexity\": \"logn\"\n}\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "logn", "responce": "\n{\n    \"complexity\": \"logn\"\n}\n"}
+{"answer": " constant", "complexity": "constant", "responce": "\n{\n    \"complexity\": \"constant\"\n}"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " linear", "complexity": "linear", "responce": "\n\n}\n\n----------------------------------------\n\n```\n{\n    \"complexity\": \"linear\"\n}.\n```"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "constant", "responce": "\n{\n    \"complexity\": \"constant\"\n}\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "nlogn", "responce": "\n{\n    \"complexity\": \"nlogn\"\n}"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "nlogn", "responce": "\n                void update(int val) {\n                    mx += val;\n                }\n            }\n        }\n\n    }\n\n    static class inputreader {\n        public bufferedreader reader;\n        public stringtokenizer tokenizer;\n\n        public inputreader(inputstream stream) {\n            reader = new bufferedreader(new inputstreamreader(stream), 32768);\n            tokenizer = null;\n        }\n\n        public string next() {\n            while (tokenizer == null ||!tokenizer.hasmoretokens()) {\n                try {\n                    tokenizer = new stringtokenizer(reader.readline());\n                } catch (ioexception e) {\n                    throw new runtimeexception(e);\n                }\n            }\n            return tokenizer.nexttoken();\n        }\n\n        public int nextint() {\n            return integer.parseint(next());\n        }\n\n    }\n\n}\n\n----------------------------------------\n\n```\n{\n    \"complexity\": \"nlogn\"\n}.\n```"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "logn", "responce": "\n{\n    \"complexity\": \"logn\"\n}\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n\n"}
+{"answer": " constant", "complexity": "constant", "responce": "\n{\n    \"complexity\": \"constant\"\n}"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "nlogn", "responce": "\n{\n    \"complexity\": \"nlogn\"\n}"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "nlogn", "responce": "\n{\n    \"complexity\": \"nlogn\"\n}"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "nlogn", "responce": "\n{\n    \"complexity\": \"nlogn\"\n}"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n\n"}
+{"answer": " nlogn", "complexity": "nlogn", "responce": "\n'' || c == '\\n' || c == '\\r' || c == '\\t' || c == -1;\n\t\t\t\t}\n\t\t \n\t\t\t\tpublic boolean isendofline(int c) \n\t\t\t\t{\n\t\t\t\t\treturn c == '\\n' || c == '\\r' || c == -1;\n\t\t\t\t}\n\t\t \n\t\t\t\tpublic interface spacecharfilter \n\t\t\t\t{\n\t\t\t\t\tboolean isspacechar(int ch);\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\n----------------------------------------\n\n```\n{\n    \"complexity\": \"nlogn\"\n}\n```"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n\n            this.x = x;\n            this.y = y;\n        }\n        \n        public double dist(pointd p){\n            return sqrt((x - p.x)*(x - p.x) + (y - p.y)*(y - p.y));\n        }\n    }\n    \n    static int[] sieve(int n){\n        boolean[] isprime = new boolean[n + 1];\n        arrays.fill(isprime, true);\n        isprime[0] = isprime[1] = false;\n        for (int i = 2; i * i <= n; i++){\n            if (isprime[i]){\n                for (int j = i * i; j <= n; j += i) isprime[j] = false;\n            }\n        }\n        int[] p = new int[0];\n        for (int i = 2; i <= n; i++){\n            if (isprime[i]) p = arrays.copyof(p, p.length + 1);\n            p[p.length - 1] = i;\n        }\n        return p;\n    }\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " quadratic", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " nlogn", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "nlogn", "responce": "\n2) c = getchar();\n            while (c!= '\\n' && c!= nc) {\n                res.append(c);\n                c = getchar();\n            }\n            return res.tostring();\n        }\n\n        public void close() {\n            try {\n                in.close();\n            } catch (exception e) {\n            }\n        }\n    }\n}\n\n----------------------------------------\n\n```\n{\n    \"complexity\": \"nlogn\"\n}\n```"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n                607,    613,    617,    619,    631,    641,    643,    647,    653,    659,\n                661,    673,    677,    683,    691,    701,    709,    719,    727,    733,\n                739,    743,    751,    757,    761,    769,    773,    787,    797,    809,\n                811,    821,    823,    827,    829,    839,    853,    857,    859,    863,\n                877,    881,    883,    887,    907,    911,    919,    929,    937,    941,\n                "}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "constant", "responce": "\n{\n    \"complexity\": \"constant\"\n}"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "linear", "responce": "\n\n\t\tif (n =='' || n == '\\n' || n == '\\r' || n == '\\t' || n == -1)\n\t\t\treturn true;\n\t\treturn false;\n\t}\n\tprivate boolean isspacechar(int c) {\n\t\treturn iswhitespace(c);\n\t}\n}\n\n----------------------------------------\n\n```json\n{\n    \"complexity\": \"linear\"\n}\n```"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "nlogn", "responce": "\n{\n    \"complexity\": \"nlogn\"\n}"}
+{"answer": " linear", "complexity": "exponential", "responce": "\n{\n    \"complexity\": \"exponential\"\n}"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " logn", "complexity": "nlogn", "responce": "\n(format, args));\n            return this;\n        }\n\n        public void flush() {\n            try {\n                os.write(cache.tostring());\n                cache.setlength(0);\n            } catch (ioexception e) {\n                throw new uncheckedioexception(e);\n            }\n        }\n\n        public void close() {\n            flush();\n            try {\n                os.close();\n            } catch (ioexception e) {\n                throw new uncheckedioexception(e);\n            }\n        }\n\n    }\n\n}\n\n----------------------------------------\n\n```json\n{\n    \"complexity\": \"nlogn\"\n}\n```"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "nlogn", "responce": "\n{\n    \"complexity\": \"nlogn\"\n}"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " logn", "complexity": "nlogn", "responce": "\n\n                left = mid + 1;\n            }\n        }\n        return new int[]{rect[0], rect[1], x2, y2};\n    }\n\n}\n\n----------------------------------------\n\n```\n{\n    \"complexity\": \"nlogn\"\n}\n```"}
+{"answer": " nlogn", "complexity": "nlogn", "responce": "\n{\n    \"complexity\": \"nlogn\"\n}"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n            for (int i = ar.length - 1; i > 0; i--)\n            {\n                int index = rnd.nextint(i + 1);\n                // simple swap\n                long a = ar[index];\n                ar[index] = ar[i];\n                ar[i] = a;\n            }\n            arrays.sort(ar);\n        }\n\n        static void reverse(long[] arr) {\n            int last = arr.length / 2;\n            for (int i = 0; i < last; i++) {\n                long tmp = arr[i];\n                arr[i] = arr[arr.length - 1 - i];\n                arr[arr.length - 1 - i] = tmp;\n            }\n        }\n\n        static void sort(double[] ar) {\n            random rnd = threadlocalrandom.current();\n            for (int i = ar.length - 1; i > 0; i--)\n            {\n                int index = rnd.nextint(i + 1);\n                // simple swap\n                double a = ar[index];\n                ar[index] = ar"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " constant", "complexity": "constant", "responce": "\n{\n    \"complexity\": \"constant\"\n}"}
+{"answer": " quadratic", "complexity": "nlogn", "responce": "\n\n{\n    \"complexity\": \"nlogn\"\n}"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "logn", "responce": "\n{\n    \"complexity\": \"logn\"\n}\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " linear", "complexity": "nlogn", "responce": "\n(int n) {\n\t\tif (n <= 0)\n\t\t\treturn false;\n\t\treturn (n & (n - 1)) == 0;\n\t}\n\t\n}\n\n----------------------------------------\n\n```\n\n{\n    \"complexity\": \"nlogn\"\n}\n\n```"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "nlogn", "responce": "\n:on\n\n    private boolean isoj = system.getproperty(\"online_judge\")!= null;\n}\n\nclass fastwriter implements autocloseable {\n    private final printwriter out;\n\n    public fastwriter(outputstream outputstream) {\n        out = new printwriter(new bufferedwriter(new outputstreamwriter(outputstream)));\n    }\n\n    public void print(object... objects) {\n        for (int i = 0; i < objects.length; i++) {\n            if (i!= 0) out.print(' ');\n            out.print(objects[i]);\n        }\n    }\n\n    public void println(object... objects) {\n        print(objects);\n        out.println();\n    }\n\n    public void close() {\n        out.close();\n    }\n}\n\n```\n\n----------------------------------------\n\n```json\n{\n    \"complexity\": \"nlogn\"\n}.\n```"}
+{"answer": " nlogn", "complexity": "nlogn", "responce": "\n{\n    \"complexity\": \"nlogn\"\n}"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n    public static long sum(long a[],int n){long s=0;for(int i=0;i<n;++i)s+=a[i];return s;}\n    public static int sum(int a[],int n){int s=0;for(int i=0;i<n;++i)s+=a[i];return s;}\n    public static long max(long a[],int n){long mx=a[0];for(int i=1;i<n;++i)mx=math.max(mx,a[i]);return mx;}\n    public static int max(int a[],int n){int mx=a[0];for(int i=1;i<n;++i)mx=math.max(mx,a[i]);return mx;}\n    public static long min(long a[],int n){long mn=a[0];for(int i=1;i<n;++i)mn=math.min(mn,a[i]);return mn;}\n    public static int min(int a[],int n){int mn=a[0];for(int i=1;i<n;++i)"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n = mn;\n            for (int v : ar[min_index])\n                sum = add(type, v, sizes, sum, dp2);\n\n            int[] factorial = new int[maxn];\n            factorial[0] = 1;\n            for (int i = 1; i < maxn; i++)\n                factorial[i] = (int) ((long) factorial[i - 1] * i % mod);\n\n            int ans = 0;\n            for (int i = 0; i <= ar[(1 + min_index) % 3].size(); i++)\n                for (int j = 0; j <= ar[(2 + min_index) % 3].size(); j++)\n                    for (int s = t; s <= total_sum; s++)\n                        ans = (ans + dp[i][j][0][s]) % mod;\n\n            for (int i = 0; i <= mn; i++)\n                for (int s = t; s <= total_sum; s++)\n                    ans = (ans + dp2[0][0][i][s]) % mod;\n\n            out.println"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "nlogn", "responce": "\n{\n    \"complexity\": \"nlogn\"\n}"}
+{"answer": " nlogn", "complexity": "nlogn", "responce": "\n\n{\n    \"complexity\": \"nlogn\"\n}"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "nlogn", "responce": "\n{\n    \"complexity\": \"nlogn\"\n}\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "logn", "responce": "\n{\n    \"complexity\": \"logn\"\n}"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "constant", "responce": "\n{\n    \"complexity\": \"constant\"\n}\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "quadratic", "responce": "\n{\n    \"complexity\": \"quadratic\"\n}"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}\n"}
+{"answer": " nlogn", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " constant", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\nmodulo(self, n):\n        if n <= 0:\n            print(\"invalid argument to calculate inverse modulo!\")\n            print(\"n must be positive value. but the argument was \" + str(n))\n            exit()\n        if n < len(self.invmodulos):\n            return self.invmodulos[n]\n        nextarr = [0] * (n + 1 - len(self.invmodulos))\n        initiali = len(self.invmodulos)\n        for i in range(initiali, n + 1):\n            nextarr[i - initiali] = pow(i, self.mod - 2, self.mod)\n        self.invmodulos += nextarr\n        return self.invmodulos[n]\n \n    def invfactorial(self, n):\n        if n < 0:\n            print(\"invalid argument to calculate inverse factorial!\")\n            print(\"n must be non-negative value. but the argument was \" + str(n))\n            exit()\n        if n < len(self.invfactorial_):\n            return self.invfactorial_[n]\n        "}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "ERROR", "responce": "\n be\n{\n    \"complexity\": time complexity of the whole code,\n}.\n\n\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n:\n                self._delete(pos, idx - 1)\n \n    def __contains__(self, value):\n        \"\"\"return `true` if `value` is in sorted list.\"\"\"\n        pos, idx = self._loc_right(value)\n        return idx and _lists[pos][idx - 1] == value\n \n    def __len__(self):\n        \"\"\"return the length of sorted list.\"\"\"\n        return self._len\n \n    def __getitem__(self, index):\n        \"\"\"return the element at the given `index`.\"\"\"\n        if index < 0:\n            index += self._len\n        if 0 <= index < self._len:\n            pos, idx = self._fen_findkth(index + 1)\n            return _lists[pos][idx]\n        raise indexerror\n \n    def index(self, value):\n        \"\"\"return the index of `value` in sorted list.\"\"\"\n        pos, idx = self._loc_right(value)\n        if idx and _lists[pos][idx - 1] == value:\n            return self._fen_query(pos) + idx - "}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " quadratic", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " nlogn", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " cubic", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "logn", "responce": "\n{\n    \"complexity\": \"logn\"\n}"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}\n"}
+{"answer": " logn", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "nlogn", "responce": "\n{\n    \"complexity\": \"nlogn\"\n}"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n):\n        if n <= 0:\n            print(\"invalid argument to calculate inverse modulo!\")\n            print(\"n must be positive value. but the argument was \" + str(n))\n            exit()\n        if n < len(self.invmodulos):\n            return self.invmodulos[n]\n        nextarr = [0] * (n + 1 - len(self.invmodulos))\n        initiali = len(self.invmodulos)\n        for i in range(initiali, n + 1):\n            nextarr[i - initiali] = pow(i, -1, self.mod)\n        self.invmodulos += nextarr\n        return self.invmodulos[n]\n \n    def invfactorial(self, n):\n        if n <= 0:\n            print(\"invalid argument to calculate inverse factorial modulo!\")\n            print(\"n must be positive value. but the argument was \" + str(n))\n            exit()\n        if n < len(self.invfactorial_):\n            return self.invfactorial_[n]\n        nextarr = [0] * (n +"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "logn", "responce": "\n{\n    \"complexity\": \"logn\"\n}"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n self.invmodulos\n        if n < len(pi):\n            return pi[n]\n        nextarr = [0] * (n + 1 - len(pi))\n        initiali = len(pi)\n        for i in range(initiali, n + 1):\n            nextarr[i - initiali] = pow(i, p - 2, p)\n        self.invmodulos += nextarr\n        return self.invmodulos[n]\n\n    def invfactorial(self, n):\n        if n <= -1:\n            print(\"invalid argument to calculate n!\")\n            print(\"n must be non-negative value. but the argument was \" + str(n))\n            exit()\n        if n < len(self.invfactorial_):\n            return self.invfactorial_[n]\n        nextarr = [0] * (n + 1 - len(self.invfactorial_))\n        initiali = len(self.invfactorial_)\n        for i in range(initiali, n + 1):\n            nextarr[i - initiali] = self.inv(self.calc"}
+{"answer": " constant", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " constant", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}\n"}
+{"answer": " nlogn", "complexity": "nlogn", "responce": "\n{\n    \"complexity\": \"nlogn\"\n}"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "quadratic", "responce": "\n{\n    \"complexity\": \"quadratic\"\n}"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n in stack[:-1]:\n            self._parent[v] = stack[-1]\n        return self._parent[x]\n\n    def unite(self, x, y):\n        root_x = self.find_root(x)\n        root_y = self.find_root(y)\n        if root_x == root_y: return\n        self.group -= 1\n        if self._size[root_x] < self._size[root_y]:\n            root_x, root_y = root_y, root_x\n        self._parent[root_y] = root_x\n        self._size[root_x] += self._size[root_y]\n\n    def same(self, x, y):\n        return self.find_root(x) == self.find_root(y)\n\n    def size(self, x):\n        return self._size[self.find_root(x)]\n\ndef main():\n    n = int(input())\n    uf = unionfindversize(n)\n    for i in range(n-1):\n        a,b = map(int,input"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " cubic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " quadratic", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " nlogn", "complexity": "NO RESPONCE", "responce": "\n\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " linear", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " np", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " linear", "complexity": "linear", "responce": "\n{\n    \"complexity\": \"linear\"\n}"}
+{"answer": " constant", "complexity": "NO RESPONCE", "responce": "\n"}
+{"answer": " logn", "complexity": "NO RESPONCE", "responce": "\n"}

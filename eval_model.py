@@ -5,6 +5,7 @@ import torch
 import numpy as np
 
 from sklearn.metrics import confusion_matrix
+from sklearn.metrics import classification_report
 import argparse
 
 from AST2Code import *
@@ -104,7 +105,9 @@ def evaluate(args):
     acc = np.sum(conf_mat.diagonal()) / np.sum(conf_mat)
 
     
-    return 'accuracy: {} %'.format( round(acc*100,2))
+    return conf_mat, 'accuracy: {} %'.format( round(acc*100,2)), val_true_labels, val_prediction_labels
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
@@ -119,11 +122,21 @@ if __name__ == "__main__":
     parser.add_argument('--file_name', required=False, type=str, default='data')
     parser.add_argument('--model_folder', required=False,type=str, default='experiments_model')
     args = parser.parse_args()
-    result_val = evaluate(args)
+    eval_result = evaluate(args)
+    conf_mat = eval_result[0]
+    result_val = eval_result[1]
     print(result_val)
     if "result" not in os.listdir():
         os.mkdir('result')
 
-    f = open(f'result/{args.model}_random.txt', 'w')
+    file_name = f'result/{args.model}_random_{args.model_folder.split("/")[-1]}_{args.valid_path.split("/")[-1]}.txt'
+    f = open(file_name, 'w')
     f.write(result_val+'\n')
+    cm = np.array2string(conf_mat)
+    f.write('Title\n\nClassification Report\n\n{}\n\nConfusion Matrix\n\n{}\n'.format('random', cm))
     f.close()
+    os.makedirs(f"raw_result/{args.model}", exist_ok=True)
+    raw_file_name = f'raw_result/{args.model}/random_{args.model_folder.split("/")[-1]}_{args.valid_path.split("/")[-1]}.txt'
+    with open(raw_file_name, 'w') as f_raw:
+        for val_true, val_pred in zip(eval_result[2], eval_result[3]):
+            f_raw.write(str(val_true) + str(val_pred) + '\n')

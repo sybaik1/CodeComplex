@@ -1,0 +1,6 @@
+gpt4-java with codecomplex-simple
+Scores
+acc: 0.600, f1 score: 0.606
+base: 0.900, exp 2: 0.727, exp 3: 0.806
+Scores with [0,1,2,3,4,6,8]
+base: 0.903, exp 2: 0.667, exp 3: 0.761

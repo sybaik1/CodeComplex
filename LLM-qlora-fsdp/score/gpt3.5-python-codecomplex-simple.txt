@@ -1,0 +1,6 @@
+gpt3.5-python with codecomplex-simple
+Scores
+acc: 0.455, f1 score: 0.442
+base: 0.834, exp 2: 0.599, exp 3: 0.702
+Scores with [0,1,2,3,4,6,8]
+base: 0.844, exp 2: 0.557, exp 3: 0.665

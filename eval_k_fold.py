@@ -3,6 +3,7 @@ import torch
 import numpy as np
 import random
 from sklearn.metrics import confusion_matrix
+from sklearn.metrics import classification_report
 import argparse
 
 from AST2Code import *
@@ -64,8 +65,6 @@ def set_seed(args):
     torch.cuda.manual_seed_all(args.seed)
 
 def test(args,model,tokenizer):
-
-
     test_dataset = datasets[args.model](path=args.test_path,tokenizer=tokenizer,args=args)
 
     device=args.device
@@ -100,7 +99,7 @@ def test(args,model,tokenizer):
     conf_mat = confusion_matrix(val_true_labels, val_prediction_labels)
     acc = np.sum(conf_mat.diagonal()) / np.sum(conf_mat)
 
-    return round(acc*100,2)
+    return conf_mat, round(acc*100,2), val_true_labels, val_prediction_labels
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
@@ -125,37 +124,50 @@ if __name__ == "__main__":
     set_seed(args)
     tokenizer = tokenizers[args.model].from_pretrained(pretrained_model_name_or_path=model_names[args.model])
     model = integrated_model(args)
-
+    
+    conf_mat = []
+    y_true = []
+    y_pred = []
     for f in range(4):
         args.fold=f
         args.test_path=f'test_{f}_fold_{args.folder_name}'
         len_sum.append(len(open(f'data/test_{f}_fold_{args.folder_name}').readlines()))
         model.load_state_dict(torch.load(f'{args.model_folder}/{f}_fold_{args.model}.pt'))
         
-        result['origin'].append(test(args,model,tokenizer))
+        res = test(args,model,tokenizer)
+        result['origin'].append(res[1])
+        conf_mat.append(res[0])
+        y_true = np.append(y_true,res[2])
+        y_pred = np.append(y_pred,res[3])
         
         for i in length_items:
             args.test_path='length_split/'+f'{i}_test_{f}_fold_{args.folder_name}'
 
             if i in result.keys():
-                result[i].append(test(args,model,tokenizer))
+                result[i].append(test(args,model,tokenizer)[1])
             else:
-                result[i]=[test(args,model,tokenizer)]
+                result[i]=[test(args,model,tokenizer)[1]]
 
         for i in complexity_items:
             args.test_path='complexity_split/'+f'{i}_test_{f}_fold_{args.folder_name}'
             if i in result.keys():
-                result[i].append(test(args,model,tokenizer))
+                result[i].append(test(args,model,tokenizer)[1])
             else:
-                result[i]=[test(args,model,tokenizer)]
+                result[i]=[test(args,model,tokenizer)[1]]
+
     #normalize
     weight=len_sum/np.sum(len_sum)
     if "result" not in os.listdir():
         os.mkdir('result')
 
-    f = open(f'result/{args.model}_k.txt', 'w')
+    with open(f'prediction/{args.model}_k_{args.model_folder.split("/")[-1]}_{args.folder_name.split("/")[-1]}.txt', 'w') as f:
+        for i in range(len(y_true)):
+            f.write(f'{int(y_true[i])}, {int(y_pred[i])}\n')
+    f = open(f'result/{args.model}_k_{args.model_folder.split("/")[-1]}_{args.folder_name.split("/")[-1]}.txt', 'w')
     for i in result.keys():
         data=f'{i} mean: {round(sum(np.multiply(result[i],weight)),2)} std : {round(np.std(result[i]),2)}'
         print(data)
         f.write(data+'\n')
+    cm = np.array2string(sum(conf_mat))
+    f.write('Title\n\nClassification Report\n\n{}\n\nConfusion Matrix\n\n{}\n'.format('origin', cm))
     f.close()

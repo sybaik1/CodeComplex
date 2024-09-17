@@ -1,0 +1,6 @@
+geminipro-java with codecomplex-simple
+Scores
+acc: 0.325, f1 score: 0.297
+base: 0.801, exp 2: 0.486, exp 3: 0.622
+Scores with [0,1,2,3,4,6,8]
+base: 0.810, exp 2: 0.431, exp 3: 0.557
