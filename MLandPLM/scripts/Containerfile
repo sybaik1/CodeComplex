@@ -1,0 +1,19 @@
+FROM nvidia/cuda:12.2.0-devel-ubuntu22.04
+
+COPY req.txt /req.txt
+
+RUN \
+    apt-get update -y \
+ && DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -y \
+	python3.10 \
+	python3-pip \
+	python3-setuptools \
+	python3-wheel \
+	python3.10-dev \
+	build-essential \
+	curl \
+ && pip3 install -r /req.txt \
+ && rm -rf /var/lib/apt/lists/* \
+ && mkdir /mnt/workspace
+
+WORKDIR /mnt/workspace

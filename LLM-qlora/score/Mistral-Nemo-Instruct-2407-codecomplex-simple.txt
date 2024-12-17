@@ -1,0 +1,7 @@
+mistralai/Mistral-Nemo-Instruct-2407 with codecomplex-simple
+Scores
+acc: 0.423, f1 score: 0.443
+base: 0.732, exp 2: 0.535, exp 3: 0.619
+Scores with [0,1,2,3,4,6,8]
+base: 0.731, exp 2: 0.487, exp 3: 0.576
+88.6 &91.1 &76.1 &88.5 &78.3 &88.6 &83.0 &42.3 &36.6

@@ -1,0 +1,6 @@
+gpt4-python with codecomplex-simple
+Scores
+acc: 0.538, f1 score: 0.527
+base: 0.872, exp 2: 0.674, exp 3: 0.761
+Scores with [0,1,2,3,4,6,8]
+base: 0.877, exp 2: 0.632, exp 3: 0.725

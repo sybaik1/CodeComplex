@@ -1,0 +1,6 @@
+gpt3.5-java with codecomplex-simple
+Scores
+acc: 0.542, f1 score: 0.529
+base: 0.870, exp 2: 0.662, exp 3: 0.753
+Scores with [0,1,2,3,4,6,8]
+base: 0.881, exp 2: 0.620, exp 3: 0.718

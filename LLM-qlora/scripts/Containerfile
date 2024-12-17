@@ -1,0 +1,21 @@
+FROM pytorch/pytorch:2.2.2-cuda12.1-cudnn8-devel
+
+COPY req.txt /req.txt
+
+RUN \
+    apt update \
+ && apt upgrade -y \
+ && apt-get update -y \
+ && DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -y \
+	build-essential \
+	curl \
+	git \
+ && pip install torch==2.2.2 torchvision==0.17.2 torchaudio==2.2.2 --index-url https://download.pytorch.org/whl/cu123 \
+ && pip install -r /req.txt \
+ && pip install git+https://github.com/huggingface/trl.git \
+ && pip install -U flash-attn transformers pert
+ && pip install tiktoken pytest
+ && rm -rf /var/lib/apt/lists/* \
+ && mkdir /mnt/workspace
+
+WORKDIR /mnt/workspace
