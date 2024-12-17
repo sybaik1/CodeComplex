@@ -1,7 +1,0 @@
-google/gemma-2-9b-it-pretrained with codecomplex-simple
-Scores
-acc: 0.874, f1 score: 0.894
-base: 0.932, exp 2: 0.897, exp 3: 0.914
-Scores with [0,1,2,3,4,6,8]
-base: 0.935, exp 2: 0.893, exp 3: 0.911
-97.0 &97.7 &95.0 &96.8 &96.5 &98.1 &98.2 &87.4 &78.2

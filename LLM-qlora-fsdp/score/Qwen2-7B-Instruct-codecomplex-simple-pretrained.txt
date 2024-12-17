@@ -1,7 +1,0 @@
-Qwen/Qwen2-7B-Instruct-pretrained with codecomplex-simple
-Scores
-acc: 0.902, f1 score: 0.915
-base: 0.953, exp 2: 0.925, exp 3: 0.937
-Scores with [0,1,2,3,4,6,8]
-base: 0.956, exp 2: 0.924, exp 3: 0.935
-98.1 &98.0 &95.4 &96.3 &98.1 &98.7 &98.7 &90.2 &80.1

@@ -1,7 +1,0 @@
-meta-llama/Meta-Llama-3.1-70B-Instruct-pretrained with codecomplex-simple
-Scores
-acc: 0.929, f1 score: 0.941
-base: 0.960, exp 2: 0.942, exp 3: 0.950
-Scores with [0,1,2,3,4,6,8]
-base: 0.963, exp 2: 0.940, exp 3: 0.948
-98.4 &99.0 &97.6 &97.9 &97.8 &99.0 &99.0 &92.9 &82.4

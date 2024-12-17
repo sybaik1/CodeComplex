@@ -1,6 +1,0 @@
-google/gemma-2-9b-it
-google/gemma-2-27b-it
-Qwen/Qwen2-7B-Instruct
-mistralai/Mistral-Nemo-Instruct-2407
-meta-llama/Meta-Llama-3.1-8B-Instruct
-meta-llama/Meta-Llama-3.1-70B-Instruct
