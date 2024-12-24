@@ -27,10 +27,26 @@ It extends the CoRCoD dataset by enhancing class distribution and introducing bi
 ### Annotation Process
 
 ![Annotation Overview](figures/Annotation_Overview.png)
-The annotation process was conducted by a team of three experts with over ten years of experience.
-Independent annotations were followed by cross-validation to ensure consistency.
+To ensure high quality and accurate labeling of the complexity classes,
+the annotation process was conducted by a team of three experts with over five years of experience with programming and algorithm design.
+Each annotator independently labeled the time complexity of the codes to avoid bias and improve reliability.
 
-### Hierachy Complexity Score (HC-score)
+Problems were chosen based on their relevance to one of the seven predefined complexity classes.
+Then correct code solutions that passed all test cases (including hidden ones) were considered.
+* Incorrect or incomplete solutions were filtered out.
+The solution codes were then annotated following the provided [guidelines](#annotator-guideline).
+
+Cases of disagreement were resolved through discussions among the annotators.
+Annotators shared their reasoning and reached a consensus.
+After reaching consensus, a final review of all annotations was conducted to ensure that
+the dataset met high-quality standards.
+Edge cases were revisited for thorough validation, and any ambiguities were resolved.
+
+This meticulous process helped in building a reliable dataset
+that accurately represents the time complexity of a diverse set of codes,
+making it a valuable resource for evaluating LLMs.
+
+### Hierarchy Complexity Score (HC-score)
 
 HC-Score penalizes predictions based on their deviation from correct complexity classes.
 It is calculated as follows:
@@ -41,7 +57,7 @@ Here,  represents predicted complexity classes,  represents true complexity clas
 
 $$HC-Score_w(P, R) = \frac{\sum_{i=1}^N max(1 - |p_i - r_i| / w, 0)} {N}$$
 
-This nuanced approach factor in the partial reasoning capabilities of LLMs.
+This nuanced approach factors in the partial reasoning capabilities of LLMs.
 
 ## 📜 Features
 
@@ -99,9 +115,8 @@ Check the Variables Described in the Algorithm Problems
 
 Each algorithm implementation can have many variable instances. Only consider the variables that are given as inputs from the problems for calculating the time complexity.
 
-* **Input Variable Notation**
-
-For convenience, use n and m to denote input variables and |n| and |m| to denote the size of n and m.
+> [!Input Variable Notation]
+> For convenience, use n and m to denote input variables and |n| and |m| to denote the size of n and m.
 
 2. Time Complexity Calculation
 
@@ -150,7 +165,7 @@ Mark items that do not belong to any of the 7 predefined complexity classes.
 
 Clone the repository:
 ```bash
-git clone https://github.com/sybaik1/CodeComplex-Data.git
+git clone https://github.com/sybaik1/CodeComplex.git
 ```
 
 ## 🖊 Citation
