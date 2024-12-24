@@ -33,7 +33,7 @@ Each annotator independently labeled the time complexity of the codes to avoid b
 
 Problems were chosen based on their relevance to one of the seven predefined complexity classes.
 Then correct code solutions that passed all test cases (including hidden ones) were considered.
-* Incorrect or incomplete solutions were filtered out.
+> Incorrect or incomplete solutions were filtered out.
 The solution codes were then annotated following the provided [guidelines](#annotator-guideline).
 
 Cases of disagreement were resolved through discussions among the annotators.
