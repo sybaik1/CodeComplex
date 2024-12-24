@@ -154,7 +154,7 @@ git clone https://github.com/sybaik1/CodeComplex-Data.git
 ```
 
 ## 🖊 Citation
-
+```text
 @misc{baik2024codecomplextimecomplexitydatasetbilingual,
       title={CodeComplex: A Time-Complexity Dataset for Bilingual Source Codes}, 
       author={Seung-Yeop Baik and Joonghyuk Hahn and Jungin Kim and Aditi and Mingi Jeon and Yo-Sub Han and Sang-Ki Ko},
@@ -164,3 +164,4 @@ git clone https://github.com/sybaik1/CodeComplex-Data.git
       primaryClass={cs.SE},
       url={https://arxiv.org/abs/2401.08719},
 }
+```
