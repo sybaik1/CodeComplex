@@ -26,6 +26,7 @@ It extends the CoRCoD dataset by enhancing class distribution and introducing bi
 
 ### Annotation Process
 
+<img src="figures/Overview.pdf"\>
 The annotation process was conducted by a team of three experts with over ten years of experience.
 Independent annotations were followed by cross-validation to ensure consistency.
 
@@ -63,7 +64,7 @@ This nuanced approach factor in the partial reasoning capabilities of LLMs.
 | $O(log n)$         | 700        | 669          |
 | $O(n log n)$       | 700        | 796          |
 | Exponential      | 605        | 528          |
-| Total            | 4900       | 4900         |
+| Total            | 4,900       | 4,900         |
 
 
 
