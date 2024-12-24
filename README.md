@@ -34,11 +34,11 @@ Independent annotations were followed by cross-validation to ensure consistency.
 HC-Score penalizes predictions based on their deviation from correct complexity classes.
 It is calculated as follows:
 
-$$HC-Score(P, R) = \sum {|p_i - r_i|} \over {(N × Number of Classes)}$$
+$$HC-Score(P, R) = \frac{\sum_{i=1}^N \frac{|p_i - r_i|}{\text{Number of Classes}}}{N}$$
 
 Here,  represents predicted complexity classes,  represents true complexity classes, and  is the total number of predictions. The Windowed HC-Score expands this metric by allowing flexible evaluation within a defined margin of error:
 
-$$HC-Score_w(P, R) = \sum {{max(1 - |p_i - r_i| / w, 0)} \over {N}}$$
+$$HC-Score_w(P, R) = \frac{\sum_{i=1}^N max(1 - |p_i - r_i| / w, 0)} {N}$$
 
 This nuanced approach factor in the partial reasoning capabilities of LLMs.
 
