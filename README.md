@@ -74,6 +74,21 @@ This nuanced approach factor in the partial reasoning capabilities of LLMs.
 3. **Open Source**: Fully accessible for research and development.
 4. **Applications**: Useful for NLP, Software Engineering, and Programming Language communities.
 
+## 🏆 Leaderboard
+
+Here is the current leaderboard for EscapeBench performance across different models:
+
+| Rank | Accuracy   | F1 Score  | HC Score  |
+|------|------------|-----------|-----------|
+| 1    | Llama3.1-70B(44.2) | Mistral-12B(44.3)  | Llama3.1-70B(81.3) |
+| 2    | Mistral-12B(42.3) | Llama3.1-70B(43.8) | Qwen2-7B(77.1) |
+| 3    | Gemma2-9B(41.1) | Gemma2-9B(43.5)    | Llama3.1-8B(73.8) |
+| 4    | Qwen2.5-7B(34.2) | Qwen2.5-7B(39.9)   | Mistral-12B(73.2) |
+| 5    | Qwen2-7B(33.6) | Qwen2-7B(31.9)     | Gemma2-9B(71.5) |
+| 6    | Llama3.1-8B(30.0) | CodeGemma-7B(28.9) | Llama3.2-3B(60.6) |
+| 7    | CodeGemma-7B(25.7) | Gemma1.1-7B(28.7)  | Qwen2.5-7B(57.8) |
+| 8    | Gemma1.1-7B(25.7) | Llama3.1-8B(28.4)  | Gemma1.1-7B(57.3) |
+| 9    | Llama3.2-3B(22.9) | Llama3.2-3B(22.8)  | CodeGemma-7B(56.7) |
 
 ## Annotator Guideline
 
