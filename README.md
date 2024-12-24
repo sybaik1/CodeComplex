@@ -34,18 +34,18 @@ Independent annotations were followed by cross-validation to ensure consistency.
 HC-Score penalizes predictions based on their deviation from correct complexity classes.
 It is calculated as follows:
 
-$$HC-Score(P, R) = (Σ |p_i - r_i|) / (N × Number of Classes)$$
+$$HC-Score(P, R) = \sum {|p_i - r_i|} \over {(N × Number of Classes)}$$
 
 Here,  represents predicted complexity classes,  represents true complexity classes, and  is the total number of predictions. The Windowed HC-Score expands this metric by allowing flexible evaluation within a defined margin of error:
 
-$$HC-Score_w(P, R) = Σ max(1 - |p_i - r_i| / w, 0) / N$$
+$$HC-Score_w(P, R) = \sum {{max(1 - |p_i - r_i| / w, 0)} \over {N}}$$
 
 This nuanced approach factor in the partial reasoning capabilities of LLMs.
 
 ## 📜 Features
 
 - **Bilingual Dataset**: Includes both Java and Python codes from competitive programming platforms.
-- **Seven Complexity Classes**: Annotated across constant (O(1)), linear (O(n)), quadratic (O(n)), cubic (O(n³)), logarithmic (O(log n)), linear-logarithmic (O(n log n)), and exponential.
+- **Seven Complexity Classes**: Annotated across constant ($O(1)$), linear ($O(n)$), quadratic ($O(n^2)$), cubic ($O(n^3)$), logarithmic ($O(log n)$), linear-logarithmic ($O(n log n)$), and exponential.
 - **Balanced Class Distribution**: Designed to mitigate biases and enhance model generalization.
 - **Comprehensive Annotations**: Labeled by expert annotators considering input characteristics, library impacts, and control structures.
 - **Novel Evaluation Metric**: Introduces the Hierarchy Complexity Score (HC-Score) for nuanced performance assessment.
@@ -56,12 +56,12 @@ This nuanced approach factor in the partial reasoning capabilities of LLMs.
 
 | Complexity Class | Java Codes | Python Codes |
 |-------------------|------------|--------------|
-| O(1)             | 750        | 791          |
-| O(n)             | 779        | 853          |
-| O(n^2)            | 765        | 657          |
-| O(n^3)            | 601        | 606          |
-| O(log n)         | 700        | 669          |
-| O(n log n)       | 700        | 796          |
+| $O(1)$             | 750        | 791          |
+| $O(n)$             | 779        | 853          |
+| $O(n^2)$            | 765        | 657          |
+| $O(n^3)$            | 601        | 606          |
+| $O(log n)$         | 700        | 669          |
+| $O(n log n)$       | 700        | 796          |
 | Exponential      | 605        | 528          |
 | Total            | 4900       | 4900         |
 
@@ -151,10 +151,14 @@ Clone the repository:
 ```bash
 git clone https://github.com/sybaik1/CodeComplex-Data.git
 
-@article{CodeComplex2024,
-  author    = {Seung-Yeop Baik and others},
-  title     = {CodeComplex: Dataset for Worst-Case Time Complexity Prediction},
-  year      = {2024},
-  url       = {https://github.com/sybaik1/CodeComplex-Data},
-}
+## 🖊 Citation
 
+@misc{baik2024codecomplextimecomplexitydatasetbilingual,
+      title={CodeComplex: A Time-Complexity Dataset for Bilingual Source Codes}, 
+      author={Seung-Yeop Baik and Mingi Jeon and Joonghyuk Hahn and Jungin Kim and Yo-Sub Han and Sang-Ki Ko},
+      year={2024},
+      eprint={2401.08719},
+      archivePrefix={arXiv},
+      primaryClass={cs.SE},
+      url={https://arxiv.org/abs/2401.08719}, 
+}
