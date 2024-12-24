@@ -77,7 +77,7 @@ This nuanced approach factor in the partial reasoning capabilities of LLMs.
 
 ## 🏆 Leaderboard
 
-Here is the current leaderboard for EscapeBench performance across different models:
+Here is the current leaderboard for CodeComplex performance across different models:
 
 | Rank | Accuracy   | F1 Score  | HC Score  |
 |------|------------|-----------|-----------|
