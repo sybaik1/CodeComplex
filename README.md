@@ -26,7 +26,7 @@ It extends the CoRCoD dataset by enhancing class distribution and introducing bi
 
 ### Annotation Process
 
-<img src="figures/Overview.pdf"\>
+![Annotation Overview](figures/Annotation_Overview.png)
 The annotation process was conducted by a team of three experts with over ten years of experience.
 Independent annotations were followed by cross-validation to ensure consistency.
 
