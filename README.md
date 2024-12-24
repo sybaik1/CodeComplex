@@ -150,6 +150,7 @@ Mark items that do not belong to any of the 7 predefined complexity classes.
 Clone the repository:
 ```bash
 git clone https://github.com/sybaik1/CodeComplex-Data.git
+```
 
 ## 🖊 Citation
 
