@@ -1,5 +1,5 @@
 # CodeComplex: A Dataset for the Worst-Case Time Complexity Prediction
-
+[**📊 Dataset**](https://github.com/sybaik1/CodeComplex/tree/main/data) | [**📖 Paper**](https://arxiv.org/abs/2401.08719)
 
 ## TL; DR
 
@@ -157,10 +157,10 @@ git clone https://github.com/sybaik1/CodeComplex-Data.git
 
 @misc{baik2024codecomplextimecomplexitydatasetbilingual,
       title={CodeComplex: A Time-Complexity Dataset for Bilingual Source Codes}, 
-      author={Seung-Yeop Baik and Mingi Jeon and Joonghyuk Hahn and Jungin Kim and Yo-Sub Han and Sang-Ki Ko},
+      author={Seung-Yeop Baik and Joonghyuk Hahn and Jungin Kim and Aditi and Mingi Jeon and Yo-Sub Han and Sang-Ki Ko},
       year={2024},
       eprint={2401.08719},
       archivePrefix={arXiv},
       primaryClass={cs.SE},
-      url={https://arxiv.org/abs/2401.08719}, 
+      url={https://arxiv.org/abs/2401.08719},
 }
