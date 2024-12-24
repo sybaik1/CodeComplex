@@ -45,7 +45,7 @@ This nuanced approach factor in the partial reasoning capabilities of LLMs.
 ## 📜 Features
 
 - **Bilingual Dataset**: Includes both Java and Python codes from competitive programming platforms.
-- **Seven Complexity Classes**: Annotated across constant ($O(1)$), linear ($O(n)$), quadratic ($O(n^2)$), cubic ($O(n^3)$), logarithmic ($O(log n)$), linear-logarithmic ($O(n log n)$), and exponential.
+- **Seven Complexity Classes**: Annotated across constant ($`O(1)`$), linear ($`O(n)`$), quadratic ($`O(n^2)`$), cubic ($`O(n^3)`$), logarithmic ($`O(log n)`$), linear-logarithmic ($`O(n log n)`$), and exponential.
 - **Balanced Class Distribution**: Designed to mitigate biases and enhance model generalization.
 - **Comprehensive Annotations**: Labeled by expert annotators considering input characteristics, library impacts, and control structures.
 - **Novel Evaluation Metric**: Introduces the Hierarchy Complexity Score (HC-Score) for nuanced performance assessment.
