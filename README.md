@@ -148,10 +148,14 @@ has low scores
 | CodeT5(Python)       | - | 75.5 | 89.9 |
 | CodeT5+(Python)      | - | 78.2 | 91.0 |
 
-We fine tuned the models with the CodeComplex dataset by dividing the dataset
-into a 9 to 1 ratio for training and evaluating. The models were trained for
-6 epochs. After the fine tuning, the LLM models showed less error for each of
-the complexity class which showed a decrease in the difference between F1 and HC scores.
+We fine-tuned the models with the CodeComplex dataset by dividing the dataset
+into a 9 to 1 ratio for training and evaluation. The models were trained for
+6 epochs. After the fine-tuning, the LLM models showed less error for each complexity class, 
+which decreased the difference between F1 and HC scores.
+
+Here are the scores in a histogram version
+![Before fine tuning](figures/llm_models_before_fine_tuning.png)
+![After fine tuning]](figures/llm_models_after_fine_tuning.png)
 
 ## Annotator Guideline
 
