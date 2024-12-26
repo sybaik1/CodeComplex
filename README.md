@@ -93,19 +93,62 @@ This nuanced approach factors in the partial reasoning capabilities of LLMs.
 
 ## 🏆 Leaderboard
 
-Here is the current leaderboard for CodeComplex performance across different models:
+### LLM models before any fine-tuning
 
-| Rank | Accuracy   | F1 Score  | HC Score  |
-|------|------------|-----------|-----------|
-| 1    | Llama3.1-70B(44.2) | Mistral-12B(44.3)  | Llama3.1-70B(81.3) |
-| 2    | Mistral-12B(42.3) | Llama3.1-70B(43.8) | Qwen2-7B(77.1) |
-| 3    | Gemma2-9B(41.1) | Gemma2-9B(43.5)    | Llama3.1-8B(73.8) |
-| 4    | Qwen2.5-7B(34.2) | Qwen2.5-7B(39.9)   | Mistral-12B(73.2) |
-| 5    | Qwen2-7B(33.6) | Qwen2-7B(31.9)     | Gemma2-9B(71.5) |
-| 6    | Llama3.1-8B(30.0) | CodeGemma-7B(28.9) | Llama3.2-3B(60.6) |
-| 7    | CodeGemma-7B(25.7) | Gemma1.1-7B(28.7)  | Qwen2.5-7B(57.8) |
-| 8    | Gemma1.1-7B(25.7) | Llama3.1-8B(28.4)  | Gemma1.1-7B(57.3) |
-| 9    | Llama3.2-3B(22.9) | Llama3.2-3B(22.8)  | CodeGemma-7B(56.7) |
+| Model | Accuracy   | F1 Score  | HC Score  |
+|-------|------------|-----------|-----------|
+| Gemini Pro | 34.0 | 31.6 | 80.2 |
+| ChatGPT 3.5 | 49.9 | 48.6 | 85.2 |
+| ChatGPT 4.0 | 56.9 | 56.7 | 88.6 |
+| CodeGemma-7B | 25.7 | 28.9 | 56.7 |
+| Gemma1.1-7B | 25.7 | 28.7 | 57.3 |
+| Gemma2-9B | 41.1 | 43.5 | 71.5 |
+| Gemma2-27B | 13.2 | 17.5 | 19.8 |
+| Llama3.1-8B | 30.0 | 28.4 | 73.8 |
+| Llama3.1-70B | 44.2 | 43.8 | 81.3 |
+| Llama3.2-3B | 22.9 | 22.8 | 60.6 |
+| Mistral-12B | 42.3 | 44.3 | 73.2 |
+| Qwen2-7B| 33.6 | 31.9 | 77.1 |
+| Qwen2.5-7B | 34.2 | 39.9 | 57.8 |
+| Qwen2.5-14B | 4.0 | 7.2 | 6.6 |
+
+We have used the instruction tuned models for the models.
+We have given an output format and some LLM models output nothing if they fail
+to refine their output. Due to this reason, some larger models such as Qwen2.5-14B
+has low scores
+
+### LLM models and ML models with fine tuning
+
+| Model | Accuracy   | F1 Score  | HC Score  |
+|-------|------------|-----------|-----------|
+| CodeGemma-7B | 89.5 | 91.6 | 94.0 |
+| Gemma1.1-7B | 89.6 |91.6 | 94.0 |
+| Gemma2-9B | 87.4 | 89.4 | 93.5 |
+| Gemma2-27B | 90.2 | 92.2 | 94.3 |
+| Llama3.1-8B| 89.4 | 90.7 | 95.4 |
+| Llama3.1-70B| 92.9 | 94.1 | 96.0 |
+| Llama3.2-3B| 88.2 | 89.4 | 94.9 |
+| Mistral-12B| 88.5 | 89.7 | 94.8 |
+| Qwen2-7B| 90.2 | 91.5 | 95.3 |
+| Qwen2.5-7B| 88.7 | 90.0 | 95.0 |
+| Qwen2.5-14B| 91.9 | 93.2 | 96.0 |
+| CodeBERT(Java)     | - | 77.3 | 90.9 |
+| GraphCodeBERT(Java)| - | 85.5 | 94.1 |
+| UniXcoder(Java)    | - | 86.5 | 94.6 |
+| PLBART(Java)       | - | 85.3 | 94.3 |
+| CodeT5(Java)       | - | 82.4 | 93.1 |
+| CodeT5+(Java)      | - | 85.8 | 94.6 |
+| CodeBERT(Python)     | - | 73.3 | 88.7 |
+| GraphCodeBERT(Python)| - | 80.8 | 92.2 |
+| UniXcoder(Python)    | - | 85.4 | 94.0 |
+| PLBART(Python)       | - | 77.2 | 91.0 |
+| CodeT5(Python)       | - | 75.5 | 89.9 |
+| CodeT5+(Python)      | - | 78.2 | 91.0 |
+
+We fine tuned the models with the CodeComplex dataset by dividing the dataset
+into a 9 to 1 ratio for training and evaluating. The models were trained for
+6 epochs. After the fine tuning, the LLM models showed less error for each of
+the complexity class which showed a decrease in the difference between F1 and HC scores.
 
 ## Annotator Guideline
 
@@ -115,7 +158,7 @@ Check the Variables Described in the Algorithm Problems
 
 Each algorithm implementation can have many variable instances. Only consider the variables that are given as inputs from the problems for calculating the time complexity.
 
-> [!Input Variable Notation]
+> ![Input Variable Notation]
 > For convenience, use n and m to denote input variables and |n| and |m| to denote the size of n and m.
 
 2. Time Complexity Calculation
