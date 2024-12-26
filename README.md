@@ -24,6 +24,34 @@ CodeComplex leverages competitive programming submissions from Codeforces
 and builds on the CodeContests dataset developed by DeepMind.
 It extends the CoRCoD dataset by enhancing class distribution and introducing bilingual support.
 
+### 🔍 Why CodeComplex?
+
+1. **Fill the Gap**: Addresses limitations of existing benchmarks like CoRCoD and TASTY.
+2. **Detailed Complexity Analysis**: Accounts for input representation and algorithmic structures.
+3. **Open Source**: Fully accessible for research and development.
+4. **Applications**: Useful for NLP, Software Engineering, and Programming Language communities.
+
+### 📜 Features
+
+- **Bilingual Dataset**: Includes both Java and Python codes from competitive programming platforms.
+- **Seven Complexity Classes**: Annotated across constant ($`O(1)`$), linear ($`O(n)`$), quadratic ($`O(n^2)`$), cubic ($`O(n^3)`$), logarithmic ($`O(log n)`$), linear-logarithmic ($`O(n log n)`$), and exponential.
+- **Balanced Class Distribution**: Designed to mitigate biases and enhance model generalization.
+- **Comprehensive Annotations**: Labeled by expert annotators considering input characteristics, library impacts, and control structures.
+- **Novel Evaluation Metric**: Introduces the Hierarchy Complexity Score (HC-Score) for nuanced performance assessment.
+
+### 📊 Dataset Statistics
+
+| Complexity Class | Java Codes | Python Codes |
+|-------------------|------------|--------------|
+| $O(1)$             | 750        | 791          |
+| $O(n)$             | 779        | 853          |
+| $O(n^2)$            | 765        | 657          |
+| $O(n^3)$            | 601        | 606          |
+| $O(log n)$         | 700        | 669          |
+| $O(n log n)$       | 700        | 796          |
+| Exponential      | 605        | 528          |
+| Total            | 4,900       | 4,900         |
+
 ### Annotation Process
 
 ![Annotation Overview](figures/Annotation_Overview.png)
@@ -50,6 +78,11 @@ making it a valuable resource for evaluating LLMs.
 
 ### Hierarchy Complexity Score (HC-score)
 
+When we analyzed the responses of LLMs, we noticed that part of the reasoning is correct
+but then fails to combine them into a whole solution for the code.
+To compensate for this issue, we brought up a new metric that hierarchically evaluates
+how much the predicted complexity deviates from the actual complexity.
+
 HC-Score penalizes predictions based on their deviation from correct complexity classes.
 It is calculated as follows:
 
@@ -60,38 +93,6 @@ Here,  represents predicted complexity classes,  represents true complexity clas
 $$HC-Score_w(P, R) = \frac{\sum_{i=1}^N max(1 - |p_i - r_i| / w, 0)} {N}$$
 
 This nuanced approach factors in the partial reasoning capabilities of LLMs.
-
-## 📜 Features
-
-- **Bilingual Dataset**: Includes both Java and Python codes from competitive programming platforms.
-- **Seven Complexity Classes**: Annotated across constant ($`O(1)`$), linear ($`O(n)`$), quadratic ($`O(n^2)`$), cubic ($`O(n^3)`$), logarithmic ($`O(log n)`$), linear-logarithmic ($`O(n log n)`$), and exponential.
-- **Balanced Class Distribution**: Designed to mitigate biases and enhance model generalization.
-- **Comprehensive Annotations**: Labeled by expert annotators considering input characteristics, library impacts, and control structures.
-- **Novel Evaluation Metric**: Introduces the Hierarchy Complexity Score (HC-Score) for nuanced performance assessment.
-
-
-
-## 📊 Dataset Statistics
-
-| Complexity Class | Java Codes | Python Codes |
-|-------------------|------------|--------------|
-| $O(1)$             | 750        | 791          |
-| $O(n)$             | 779        | 853          |
-| $O(n^2)$            | 765        | 657          |
-| $O(n^3)$            | 601        | 606          |
-| $O(log n)$         | 700        | 669          |
-| $O(n log n)$       | 700        | 796          |
-| Exponential      | 605        | 528          |
-| Total            | 4,900       | 4,900         |
-
-
-
-## 🔍 Why CodeComplex?
-
-1. **Fill the Gap**: Addresses limitations of existing benchmarks like CoRCoD and TASTY.
-2. **Detailed Complexity Analysis**: Accounts for input representation and algorithmic structures.
-3. **Open Source**: Fully accessible for research and development.
-4. **Applications**: Useful for NLP, Software Engineering, and Programming Language communities.
 
 ## 🏆 Leaderboard
 
