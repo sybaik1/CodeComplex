@@ -68,7 +68,7 @@ The solution codes were then annotated following the provided [guidelines](#anno
 
 Cases of disagreement were resolved through discussions among the annotators.
 Annotators shared their reasoning and reached a consensus.
-After reaching consensus, a final review of all annotations was conducted to ensure that
+After reaching a consensus, a final review of all annotations was conducted to ensure that
 the dataset met high-quality standards.
 Edge cases were revisited for thorough validation, and any ambiguities were resolved.
 
@@ -81,14 +81,14 @@ making it a valuable resource for evaluating LLMs.
 When we analyzed the responses of LLMs, we noticed that part of the reasoning is correct
 but then fails to combine them into a whole solution for the code.
 To compensate for this issue, we brought up a new metric that hierarchically evaluates
-how much the predicted complexity deviates from the actual complexity.
+How much of the predicted complexity deviates from the actual complexity?
 
 HC-Score penalizes predictions based on their deviation from correct complexity classes.
 It is calculated as follows:
 
 $$HC-Score(P, R) = \frac{\sum_{i=1}^N \frac{|p_i - r_i|}{\text{Number of Classes}}}{N}$$
 
-Here,  represents predicted complexity classes,  represents true complexity classes, and  is the total number of predictions. The Windowed HC-Score expands this metric by allowing flexible evaluation within a defined margin of error:
+Here, $p_i$ represents predicted complexity classes, $r_i$ represents true complexity classes, and $N$ is the total number of predictions. The Windowed HC-Score expands this metric by allowing flexible evaluation within a defined margin of error:
 
 $$HC-Score_w(P, R) = \frac{\sum_{i=1}^N max(1 - |p_i - r_i| / w, 0)} {N}$$
 
@@ -115,12 +115,12 @@ This nuanced approach factors in the partial reasoning capabilities of LLMs.
 | Qwen2.5-7B | 34.2 | 39.9 | 57.8 |
 | Qwen2.5-14B | 4.0 | 7.2 | 6.6 |
 
-We have used the instruction tuned models for the models.
+We have used the instruction-tuned models for the models.
 We have given an output format and some LLM models output nothing if they fail
 to refine their output. Due to this reason, some larger models such as Qwen2.5-14B
 has low scores
 
-### LLM models and ML models with fine tuning
+### LLM models and ML models with fine-tuning
 
 | Model | Accuracy   | F1 Score  | HC Score  |
 |-------|------------|-----------|-----------|
@@ -155,7 +155,7 @@ which decreased the difference between F1 and HC scores.
 
 Here are the scores in a histogram version
 ![Before fine tuning](figures/llm_models_before_fine_tuning.png)
-![After fine tuning]](figures/llm_models_after_fine_tuning.png)
+![After fine tuning](figures/llm_models_after_fine_tuning.png)
 
 ## Annotator Guideline
 
