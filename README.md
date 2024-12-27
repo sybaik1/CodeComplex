@@ -118,7 +118,7 @@ This nuanced approach factors in the partial reasoning capabilities of LLMs.
 We have used the instruction-tuned models for the models.
 We have given an output format and some LLM models output nothing if they fail
 to refine their output. Due to this reason, some larger models such as Qwen2.5-14B
-has low scores
+has low scores.
 
 ### LLM models and ML models with fine-tuning
 
@@ -220,9 +220,9 @@ git clone https://github.com/sybaik1/CodeComplex.git
 
 ## 🖊 Citation
 ```text
-@misc{baik2024codecomplextimecomplexitydatasetbilingual,
-      title={CodeComplex: A Time-Complexity Dataset for Bilingual Source Codes}, 
-      author={Seung-Yeop Baik and Joonghyuk Hahn and Jungin Kim and Aditi and Mingi Jeon and Yo-Sub Han and Sang-Ki Ko},
+@misc{baik2024codecomplex,
+      title={CodeComplex: Dataset for Worst-Case Time Complexity Prediction},
+      author={Seung-Yeop Baik and Joonghyuk Hahn and Jungin Kim and Mingi Jeon and Aditi and Yo-Sub Han and Sang-Ki Ko},
       year={2024},
       eprint={2401.08719},
       archivePrefix={arXiv},
