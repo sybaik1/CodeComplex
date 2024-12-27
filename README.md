@@ -165,8 +165,8 @@ Check the Variables Described in the Algorithm Problems
 
 Each algorithm implementation can have many variable instances. Only consider the variables that are given as inputs from the problems for calculating the time complexity.
 
-> ![Input Variable Notation]
-> For convenience, use n and m to denote input variables and |n| and |m| to denote the size of n and m.
+> [**Input Variable Notation**]
+> For convenience, we use $n$ and $m$ to denote input variables and $|n|$ and $|m|$ to denote the size of $n$ and $m$.
 
 2. Time Complexity Calculation
 
@@ -174,31 +174,37 @@ Based on the input variables, follow the instructions below to calculate the tim
 
 a. Single Numeric Input
 
-When only a number n is given as an input, calculate the time complexity proportional to n.
-
-Do the same for multiple variables. For example, when only n is given as an input, the variable used to denote the time complexity of the code is n.
+When only a number $n$ is given as an input, calculate the time complexity proportional to $n$.
+Do the same thing when there are two or more variables.
+For instance, when only $n$ is given as an input,
+the variable used to denote the time complexity of a code is $n$.
 
 b. Multiple Numeric Inputs
 
-When n and m numeric instances are given as inputs, calculate the time complexity proportional to the one with higher complexity.
-
-For example, if m = n^2, compute the complexity of the code with m. If the implemented algorithm runs in O(n^2) = O(m), it belongs to the linear complexity class.
+When a number $n$ and $m$ numeric instances are given as inputs, 
+calculate the time complexity proportional to the one with higher complexity.
+For instance, when $m=n^2$, we compute the complexity of a code with $m$. 
+If the implemented algorithm runs in $O(n^2)=O(m)$,
+it belongs to the linear complexity class.
 
 c. Constant Inputs
 
-If the input is given as constant values, the complexity of the code belongs to the constant class.
-
-For instance, if an algorithm problem states that exactly 3 numeric values are given as inputs, and the solution code only uses a constant number of operations, the code belongs to the constant complexity class.
+If the input is given as constant values, the complexity of a given code also belongs to the constant class.
+For instance, if an algorithm problem states that exactly 3 numeric values are given as inputs,
+the solution code only uses the constant number of operations.
+Therefore, the code belongs to the constant class.
 
 3. Input Constraints
 
-Consider cases where the code utilizes the input constraints of the problem. For example, if the input is given as n ≤ a, the code can use the fixed value a instead of n. Mark these codes as unsuitable.
+Consider the case where the code utilizes the input constraints of the problem.
+When the input is given by $n\le a$, the code can use the fixed value $a$ in the
+problem instead of using $n$. Mark these codes as unsuitable.
 
 4. Built-in Library Usage
 
 Consider built-in libraries used in the algorithm (e.g., HashMap, sort, etc.) when calculating the time complexity of the entire code.
 
-For instance, given n numeric instances as inputs, if an algorithm uses O(n) iterations of a built-in sort algorithm, the time complexity for the algorithm is O(n^2 ∗ log(n)).
+For instance, given n numeric instances as inputs, if an algorithm uses $O(n)$ iterations of a built-in sort algorithm, the time complexity for the algorithm is $O(n^2 ∗ log(n))$.
 
 5. Unreachable Code
 
