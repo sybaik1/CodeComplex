@@ -20,6 +20,8 @@ this dataset addresses gaps in previous benchmarks,
 offering balanced complexity classes,
 extensive annotation, and novel evaluation metrics.
 
+![Full Picture](figures/Full_Picture.png)
+
 CodeComplex leverages competitive programming submissions from Codeforces
 and builds on the CodeContests dataset developed by DeepMind.
 It extends the CoRCoD dataset by enhancing class distribution and introducing bilingual support.
