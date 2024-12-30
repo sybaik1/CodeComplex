@@ -56,7 +56,7 @@ It extends the CoRCoD dataset by enhancing class distribution and introducing bi
 
 ### Annotation Process
 
-![Annotation Overview](figures/Annotation_Overview.png)
+![Step1](figures/Step1.png)
 To ensure high quality and accurate labeling of the complexity classes,
 the annotation process was conducted by a team of three experts with over five years of experience with programming and algorithm design.
 Each annotator independently labeled the time complexity of the codes to avoid bias and improve reliability.
@@ -66,8 +66,11 @@ Then correct code solutions that passed all test cases (including hidden ones) w
 
 > Incorrect or incomplete solutions were filtered out.
 
-The solution codes were then annotated following the provided [guidelines](#annotator-guideline).
+![Step2](figures/Step2.png)
+The annotators were first guided with the provided [guidelines](#annotator-guideline).
+Then, solution codes were annotated considering the input size of the solution code.
 
+![Step3](figures/Step3.png)
 Cases of disagreement were resolved through discussions among the annotators.
 Annotators shared their reasoning and reached a consensus.
 After reaching a consensus, a final review of all annotations was conducted to ensure that
