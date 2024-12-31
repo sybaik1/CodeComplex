@@ -246,34 +246,12 @@ cd CodeComplex
 ### Training
 
 From the LLM-qlora directory:
-
-To train a model `Model_Name` from huggingface
-```bash
-./bash_scripts/accelerate_run.sh `Model_Name`
-```
-
 To train all models in the list of modellist.txt
 ```bash
-./bash_scripts/run_script_on_models.sh ./bash_scripts/accelerate_run.sh `Model_Name`
+./bash_scripts/
 ```
 
-### Evaluating
-From the LLM-qlora directory:
 
-To evaluate a model `Model_Name` from huggingface
-```bash
-./bash_scripts/test_model.sh `Model_Name`
-```
-
-To evaluate a model `Model_Name` with fine tuned models
-```bash
-./bash_scripts/test_model.sh `Model_Name` -p
-```
-
-To train all models in the list of modellist.txt (with fine tuned models)
-```bash
-./bash_scripts/run_script_on_models.sh ./bash_scripts/test_model.sh `Model_Name` (-p)
-```
 
 ## 🖊 Citation
 ```text
