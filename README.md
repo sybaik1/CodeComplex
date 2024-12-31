@@ -56,7 +56,7 @@ It extends the CoRCoD dataset by enhancing class distribution and introducing bi
 
 ### Annotation Process
 
-![Step1](figures/Step1.png)
+<img src="https://github.com/sybaik1/CodeComplex/blob/main/figures/Step1.png" alt="Step1" width="600"/>
 To ensure high quality and accurate labeling of the complexity classes,
 the annotation process was conducted by a team of three experts with over five years of experience with programming and algorithm design.
 Each annotator independently labeled the time complexity of the codes to avoid bias and improve reliability.
@@ -65,12 +65,11 @@ Problems were chosen based on their relevance to one of the seven predefined com
 Then correct code solutions that passed all test cases (including hidden ones) were considered.
 
 > Incorrect or incomplete solutions were filtered out.
-
-![Step2](figures/Step2.png)
+<img src="https://github.com/sybaik1/CodeComplex/blob/main/figures/Step2.png" alt="Step2" width="600"/>
 The annotators were first guided with the provided [guidelines](#annotator-guideline).
 Then, solution codes were annotated considering the input size of the solution code.
 
-![Step3](figures/Step3.png)
+<img src="https://github.com/sybaik1/CodeComplex/blob/main/figures/Step3.png" alt="Step3" width="600"/>
 Cases of disagreement were resolved through discussions among the annotators.
 Annotators shared their reasoning and reached a consensus.
 After reaching a consensus, a final review of all annotations was conducted to ensure that
