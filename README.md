@@ -235,6 +235,12 @@ Under the LLM-qlora/ directory:
 * `score`: The refined scores from the responses.
 * `modellist.txt`: The models to train and test.
 
+Under the MLandPLM/ directory:
+* `data_processing`: files for preprocessing the original dataset.
+* `utils`: utils for each PLMs.
+* `parser`: parsing for java codes, provides AST for augmentation. (WIP)
+* `scripts`: bash scripts to automate training, evaluating, and refining the models.
+
 ### Installation
 
 Clone the repository:
